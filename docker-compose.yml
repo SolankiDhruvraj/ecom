@@ -20,7 +20,7 @@ services:
     environment:
       - MONGODB_URI=mongodb://mongo:27017/ecom-collab
       - REDIS_URL=redis://redis:6379
-      - JWT_SECRET=your_jwt_secret_here
+      - JWT_SECRET=${JWT_SECRET}
       - PORT=5001
     depends_on:
       - mongo
